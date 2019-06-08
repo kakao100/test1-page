@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML と CSS</title>
+  <!-- Bulma導入 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+</head>
+<!-- 背景色 -->
+<body style="background-color: lightgray">
+  <!-- 上のバー -->
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          HTML と CSS
+        </h1>
+        <h2 class="subtitle ">
+          ウェブプログラミングの課題 HTMLとCSSの説明
+        </h2>
+        <a class="button is-small" href="index.html">ホームへ戻る</a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- 左右が少しあく -->
+  <div  class="container content-wrapper">
+    <main class="columns">
+      <div class="submenu column is-3">
+        <!-- 左 -->
+        <aside class="box menu">
+          <h1>HTMLとCSSの説明</h1>
+          <p><br>
+            (押すとその個所に飛びます)<br><br>
+            <!-- 目次 押すとidのところに飛ぶ -->
+            <div class="content">
+              <ul>
+                <li>1 <a href="#sec1">HTMLとは</a></li>
+                <p style="padding-left:2em">
+                  1.1 <a href="#sec1.1">HTML概要</a><br>
+                  1.2 <a href="#sec1.2">書き方</a><br>
+                  1.3 <a href="#sec1.3">具体的な書き方(ソース)</a><br>
+                  1.4 <a href="#sec1.4">表示</a><br>
+                  1.5 <a href="#sec1.5">説明</a><br>
+                  1.6 <a href="#sec1.6">余談</a><br>
+                </p>
+                <li>2 <a href="#sec2">CSSとは</a></li>
+                <p style="padding-left:2em">
+                  2.1 <a href="#sec2.1">CSS概要</a><br>
+                  2.2 <a href="#sec2.2">書き方</a><br>
+                  2.3 <a href="#sec2.3">bulmaとは</a><br>
+                </p>
+              </ul>
+            </div>
+          </p>
+        </aside>
+      </div>
+      <div class="column">
+        <!-- 右 -->
+        <aside class="box menu">
+          <h1 id="sec1">1 HTMLとは</h1>
+          <!-- ラベル インデント  -->
+          <h1 id="sec1.1" style="padding-left:2em">1.1 HTML概要</h1>
+          <!-- インデント -->
+          <p style="padding-left:4em">
+            HTML(Hyper Text Markup Language)とは、マークアップ言語のひとつである。マークアップ言語とは文書を書くため言語である。
+            つまりHTMLは文書を書くための物である。そしてwebサイトを書くために使われ、webサイトはほとんどHTMLで書かれている。
+          </p>
+          <h1 id="sec1.2" style="padding-left:2em">1.2 書き方</h1>
+          <p style="padding-left:4em">
+            HTMLの書き方は簡単である。拡張子「.html」にプログラムを書けばよい。メモ帳などでもよい。
+            開く際はGoogle Chromeなどで開けば作成したwebページを見ることが出来る。
+          </p>
+          <h1 id="sec1.3" style="padding-left:2em">1.3 具体的な書き方(ソース)</h1>
+          <p style="padding-left:4em">
+            <iframe  style="background-color: lightgray"class = "box menu" src="sample.txt" width="600" height="220"></iframe>
+          </p>
+          <h1 id="sec1.4" style="padding-left:2em">1.4 表示</h1>
+          <p style="padding-left:4em">
+            <iframe style="background-color: lightgray" class = "box menu" src="sample.html" width="600" height="80"></iframe>
+          </p>
+          <h1 id="sec1.5" style="padding-left:2em">1.5 説明</h1>
+          <p style="padding-left:4em">
+            1行目はhtmlで書くこととそのヴァージョンを示すおまじない(HTML5)。<br>
+            headはそのファイルの前情報を書く。今回は、ブラウザ表記の時のタブに表示される文字がtitleのところに書いてある。<br>
+            bodyはそのページの本文である。<br>
+          </p>
+          <h1 id="sec1.6" style="padding-left:2em">1.6 余談</h1>
+          <p style="padding-left:4em">
+            余談だが、Google Chromeでは ページを開いている際に『Ctrl + U』でソースコードを表記することが出来る。
+          </p>
+
+          <h1 id="sec2">2 CSSとは</h1>
+          <p style="padding-left:2em">
+            <h1 id="sec2.1" style="padding-left:2em">2.1 CSS概要</h1>
+            <p style="padding-left:4em">
+              CSS（Cascading Style Sheets)とは、スタイルシート言語の一つである。HTMLなどで作成されるwebページを綺麗に装飾することを行う
+              背景に色を付けたり ヘッター、フッターを作ったり、ボタンを装飾するものである。
+            </p>
+          </p>
+          <p style="padding-left:2em">
+            <h1 id="sec2.2" style="padding-left:2em">2.2 書き方</h1>
+            <p style="padding-left:4em">
+              CSSはHTMLと同じディレクトリに「.css」を置きその中に設定を書く。
+            </p>
+          </p>
+          <p style="padding-left:2em">
+            <h1 id="sec2.3" style="padding-left:2em">2.3 bulmaとは</h1>
+            <p style="padding-left:4em">
+              CSSは自分で書くものだがネット上にある統一の物を使ってしまおうという考えでCSSフレームワークというライブラリがある。
+              その一種がbulmaである。導入方法はheadの部分に対応するリンクを書けばよい。
+            </p>
+          </p>
+        </aside>
+      </div>
+    </main>
+    <br>
+  </div>
+  <!-- フッター 下のバー -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <a class="button is-info is-small" href="index.html" >ホームへ戻る</a>
+    </div>
+  </footer>
+</body>
+</html>
