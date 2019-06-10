@@ -1,35 +1,26 @@
-function showMessages() {
-    const request = new XMLHttpRequest();
-
-    request.addEventListener('load', function() {
-	    const messages = JSON.parse(this.responseText);
-
-	    const messagesElement = document.getElementById("messages");
-	    while (messagesElement.firstChild) {
-		messagesElement.removeChild(messagesElement.firstChild);
-	    }
-
-	    messages.forEach(message => {
-		    const p = document.createElement('p');
-		    p.textContent = `time: ${message.time}, name: ${message.name}, text: ${message.text}`;
-		    messagesElement.appendChild(p);
-		});
+//関数
+function refreshServerInfo() {
+    const req = new XMLHttpRequest();
+    //when load
+    req.addEventListener('load', function() {
+	//(parse)によって入手したstring をオブジェクトに変更
+	const messages = JSON.parse(this.responseText);
+	//文書追加する場所の決定　ms のタグがあるところ(HTML側)
+	const parent = document.getElementById('ms');
+	//for文でオブジェクトを処理
+	messages.forEach(message => {
+	    //pタグで囲う
+	    const p = document.createElement('p');
+	    //表示する中身の決定　オブジェクトになっている文字データを呼ぶ
+	    p.textContent = `${message.time}    ${message.name}    ${message.text}`;
+	    //表示場所に文書追加
+	    parent.appendChild(p);
 	});
-
-    request.open('GET', 'http://local.isc.meiji.ac.jp/~re00133/wp/chat1/chat.cgi', true);
-    request.send();
+    });
+    //呼び出し
+    req.open('GET', 'http://local.isc.meiji.ac.jp/~re00133/wp/chat1/chat.cgi', true);
+    req.send();
 
 }
-
-document.getElementById("submit").addEventListener("click", function() {
-	const request = new XMLHttpRequest();
-	const message = new FormData(document.getElementById("message"));
-
-	request.addEventListener('load', showMessages);
-	request.open('POST', 'http://local.isc.meiji.ac.jp/~re00133/wp/chat1/chat.cgi', true);
-	request.send(message);
-
-    });
-
-setInterval(showMessages, 5000);
-   
+//関数呼び出し
+refreshServerInfo();
