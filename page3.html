@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>しょぼチャット</title>
+    </head>
+    <body>
+        <form method="post" action="http://local.isc.meiji.ac.jp/~re00133/wp/chat1/chat.cgi">
+            <input type="text" name="name" placeholder="名前" value="">
+            <input type="text" name="text" placeholder="メッセージ" value="">
+            <input type="submit" value="発言">
+            <input type="reset" value="リセット">
+        </form>
+        <div id="messages">
+            <p>取得した発言一覧をこのdivタグの配下に表示してください（このメッセージ自体は消して構いません）．</p>
+        </div>
+        <div>
+            <p>注意点（この注意点は消して構いません）</p>
+            <ul>
+                <li>課題に必要なのはHTMLとJavaScriptです（CSSはお好みで）．CGIを作る必要はありません．CGIは，このサンプルと同じものを使ってください．</li>
+                <li>課題のHTMLは，このサンプルのHTMLをベースにしてください．</li>
+                <li>ページが読み込まれたタイミングで，サーバから発言を全取得して表示するようにしてください．</li>
+                <li>表示内容は，「発言時刻」「発言者」「発言内容」を1行に1つ，発言時刻の降順で表示してください（サーバから返ってくるJSONは既に降順になっています）．</li>
+                <li>innerHTMLは使わないでください．代わりに，document.createElement等を使ってください．</li>
+                <li>jQuery等のライブラリ/フレームワークは使わないでください．</li>
+                <li>明示的な指定がない事項については，ウェブプログラミング的・ソフトウェア工学的にもっとも妥当と思われるものにしてください．</li>
+            </ul>
+        </div>
+    </body>
+</html>
