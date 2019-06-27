@@ -1,0 +1,17 @@
+https://qiita.com/ken0nek/items/f98f88c9c45d8499786e
+atom のtex設定
+
+パッケージの中のkeymap
+~/.atom/package/パッケージの名前/keymap/hoge
+
+https://qiita.com/yaplus/items/55fa6957c1b15dbcf387
+tex設定
+
+CSSでの宣言(CSS HTML)
+# id
+. class
+
+
+ ssh 177130@cs-s40.cs.meiji.ac.jp
+
+Tar cvfz hoge.tgz hoge.txt hoge2.txt
