@@ -1,5 +1,6 @@
-https://qiita.com/ken0nek/items/f98f88c9c45d8499786e
 atom のtex設定
+https://qiita.com/ken0nek/items/f98f88c9c45d8499786e
+
 
 パッケージの中のkeymap
 ~/.atom/package/パッケージの名前/keymap/hoge
@@ -11,7 +12,13 @@ CSSでの宣言(CSS HTML)
 # id
 . class
 
+SSH　のやり方
+ssh 177130@cs-s40.cs.meiji.ac.jp
 
- ssh 177130@cs-s40.cs.meiji.ac.jp
+tarz　圧縮のためのコマンド
+tar cvfz hoge.tgz hoge.txt hoge2.txt
 
-Tar cvfz hoge.tgz hoge.txt hoge2.txt
+
+http://local.isc.meiji.ac.jp/~ee177074/
+
+http://webmax.mind.meiji.ac.jp/portal
