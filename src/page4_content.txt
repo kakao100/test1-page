@@ -22,3 +22,6 @@ tar cvfz hoge.tgz hoge.txt hoge2.txt
 http://local.isc.meiji.ac.jp/~ee177074/
 
 http://webmax.mind.meiji.ac.jp/portal
+
+究極的なgit の戻し方
+http://www-creators.com/archives/2020
