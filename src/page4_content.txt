@@ -15,6 +15,17 @@ CSSでの宣言(CSS HTML)
 SSH　のやり方
 ssh 177130@cs-s40.cs.meiji.ac.jp
 
+SCP のやり方
+——————————————————————————————————————————————————————
+upload (自分の送信したいものがあるディレクトリで実行)
+自分のいるディレクトリのmiya_gazo って名前のディレクトリを　
+明治の場所のgetってディレクトリにアップロード出来る
+scp -r miya_gazo/ ee177130@cs-s40.cs.meiji.ac.jp:/home/ee177130/get/
+——————————————————————————————————————————————————————————————
+Down load (自分の受信したいディレクトリで実行)
+明治のmiya_gazoってディレクトリを　自分のいるディレクトリにmiya_gazoって名前でダウンロードする
+scp -r ee177130@cs-s40.cs.meiji.ac.jp:/home/ee177130/miya_gazo/ miya_gazo/
+——————————————————————————————————————————————————————————————
 tarz　圧縮のためのコマンド
 tar cvfz hoge.tgz hoge.txt hoge2.txt
 
@@ -25,3 +36,8 @@ http://webmax.mind.meiji.ac.jp/portal
 
 究極的なgit の戻し方
 http://www-creators.com/archives/2020
+
+
+早川さんの使っているpythonのやつ
+jinja2 
+bottle
